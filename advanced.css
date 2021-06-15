@@ -21,7 +21,8 @@
 .top > img {
   height: 400px;
   width: 300px;
-  margin-top: 50px;
+  margin: 50px auto;
+
 }
 
 @media (max-width: 480px) {
@@ -36,7 +37,7 @@
 @media (min-width: 481px) and (max-width: 1200px) {
   .container {
     width: 80%;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 50px auto;
@@ -45,5 +46,20 @@
   .top > img {
     height: 300px;
     width: 200px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    border: 5px solid black;
+  }
+  .top > img {
+    height: 500px;
+    width: 300px;
   }
 }
