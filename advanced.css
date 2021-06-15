@@ -5,18 +5,45 @@
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin: 30px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px auto;
+  border: 5px solid black;
 }
 
 .top {
-  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.pic1 > img {
+.top > img {
   height: 400px;
   width: 300px;
+  margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    border: 5px solid black;
+  }
+  .top > img {
+    height: 300px;
+    width: 200px;
+  }
 }
